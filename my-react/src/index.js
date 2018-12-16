@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import RouterComponent from './react-router'
+import ToDo from './todo'
 import './App.css';
 // import App from './App';
 import * as serviceWorker from './serviceWorker';
@@ -44,11 +45,13 @@ class Test extends React.Component{
 
 
 ReactDOM.render(
-    <div>
-        {Welcome({'title':'cccc'})}
+    <div className="todoapp">
+        {/* {Welcome({'title':'cccc'})}
         <Welcome title="aaa"/>
         <Test></Test>
-        <RouterComponent></RouterComponent>
+        <RouterComponent></RouterComponent> */}
+        {/*todolist 例子*/}
+        <ToDo/>
     </div>, 
 document.getElementById('root')
 );
